@@ -78,7 +78,7 @@ function goPrevStep() {
                 <div class="mb-2">Username: {{username}}</div>
                 <div>Email: {{email}}</div>
             </div>
-            <span>{{error}}</span>
+            <span class="text-red-500 text-xs my-1">{{error}}</span>
             <div class="flex justify-between mt-8">
                 <button class="px-3 py-1 bg-blue-600 hover:bg-blue-500 transition-all text-white rounded-md"
                         :class="step === 'username' && 'bg-slate-400 hover:bg-slate-400'"
