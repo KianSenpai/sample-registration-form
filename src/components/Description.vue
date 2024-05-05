@@ -54,7 +54,7 @@ export default {
     },
     computed: {
         debouncedIsBalanced() {
-            return this.debounce(this.isBalanced, 500);
+            return this.debounce(this.isBalanced, 500)
         },
     }
 }
