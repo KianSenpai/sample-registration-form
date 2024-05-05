@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <input id="description" v-model="text" @input="handleInput"/>
-        <div>{{ message }}</div>
+    <div
+        class="p-4 bg-slate-100 border border-slate-200 rounded-xl flex flex-col overflow-hidden min-w-full sm:min-w-[420px]">
+        <input id="description" v-model="text" @input="handleInput"
+               class="w-full rounded-md border border-slate-200 px-3 py-1"/>
+        <div class="mt-3 text-xs">{{ message }}</div>
     </div>
 </template>
 
@@ -16,7 +18,7 @@ export default {
     methods: {
         isBalanced() {
             const stack = []
-            const map = { '(': ')', '[': ']', '{': '}' }
+            const map = {'(': ')', '[': ']', '{': '}'}
 
             for (let char of this.text) {
                 if (char in map) {
